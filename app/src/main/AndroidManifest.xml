@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.huannguyen.fallicitymanagment">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Bathroom1"
+            android:parentActivityName=".ManBuilding"
+            android:label="Bathroom1 Employees' Records"/>
+        <activity
+            android:name=".Bathroom2"
+            android:parentActivityName=".ManBuilding"
+            android:label="Bathroom2 Employees' Records"/>
+        <activity
+            android:name=".Bathroom3"
+            android:parentActivityName=".ManBuilding"
+            android:label="Bathroom3 Employees' Records"/>
+        <activity
+            android:name=".Bathroom4"
+            android:parentActivityName=".ManBuilding"
+            android:label="Bathroom4 Employees' Records"/>
+        <activity
+            android:name=".Bathroom5"
+            android:parentActivityName=".ManBuilding"
+            android:label="Bathroom5 Employees' Records"/>
+
+        <activity android:name=".ManBuilding"
+            android:label="Manager's Bathroom List"/>
+
+        <activity android:name=".EmpBuilding"
+            android:label="Employees' Bathroom List"/>
+
+        <activity android:name=".eBathroom1"
+            android:parentActivityName=".EmpBuilding"
+            android:label="Feedback on Bathroom2"/>
+
+        <activity android:name=".eBathroom2"
+            android:parentActivityName=".EmpBuilding"
+            android:label="Feedback on Bathroom3"/>
+
+        <activity android:name=".eBathroom3"
+            android:parentActivityName=".EmpBuilding"
+            android:label="Feedback on Bathroom4"/>
+
+        <activity android:name=".eBathroom4"
+            android:parentActivityName=".EmpBuilding"
+            android:label="Feedback on Bathroom5"/>
+
+        <activity android:name=".eBathroom5"
+            android:parentActivityName=".EmpBuilding"
+            android:label="Feedback on Bathroom1"></activity>
+    </application>
+
+</manifest>
